@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #Configuration
-LDAP_HOST=""
-LDAP_OU=""
-OUTLOGDIR=""
+LDAP_HOST="$1"
+LDAP_OU="$2"
+OUTLOGDIR="$3"
 
 DATE="$(date +%Y-%m-%d_%H-%M-%S)"
 TEMP="tmp.txt"
