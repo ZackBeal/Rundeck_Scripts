@@ -9,13 +9,13 @@ function error_handler() {
 	if [[ $? == 1 ]]; then
 		case $STEP in
 			1)
-				echo "("$TIME") [ERROR] Failed to install amazon-ssm-agent via YUM, exiting..." && exit 1
+				echo "("$TIME") : [ERROR] : Failed to install amazon-ssm-agent via YUM, exiting..." && exit 1
 				;;
 			2)
-				echo "("$TIME") [ERROR] Faile to create proxy override configuration file, exiting..." && exit 1 		
+				echo "("$TIME") : [ERROR] : Faile to create proxy override configuration file, exiting..." && exit 1 		
 				;;
 			3)
-				echo "("$TIME") [ERROR] Failed to restart amazon-ssm-agent, exiting..." && exit 1
+				echo "("$TIME") : [ERROR] : Failed to restart amazon-ssm-agent, exiting..." && exit 1
 				;;
 		esac
 	else
